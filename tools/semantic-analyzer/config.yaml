@@ -1,0 +1,9 @@
+name: Semantic Analyzer
+origin: https://github.com/CertiKProject/slither-task
+info: Semantic analyzer is an extension of slither written by certik. It runs a suite of vulnerability detectors and prints visual information about contract details.
+image: semantic-analyzer
+output: /output.json
+bin: scripts
+solidity:
+    entrypoint: "'$BIN/do_solidity.sh' '$FILENAME' '$TIMEOUT' '$BIN'"
+    solc: yes
